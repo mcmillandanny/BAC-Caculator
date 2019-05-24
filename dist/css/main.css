@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: "Messina-Bold";
+	src: url("../fonts/MessinaSans_Web_Bold/MessinaSansWeb-Bold.eot");
+	src: url("../fonts/MessinaSans_Web_Bold/MessinaSansWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Messina-Regular";
+	src: url("../fonts/MessinaSans_Web_Regular/MessinaSansWeb-Regular.eot");
+	src: url("../fonts/MessinaSans_Web_Regular/MessinaSansWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MessinaMono-Bold";
+	src: url("../fonts/MessinaSansMono_Web_Bold/MessinaSansMonoWeb-Bold.eot");
+	src: url("../fonts/MessinaSansMono_Web_Bold/MessinaSansMonoWeb-Bold.woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+}
+
+.wrapper {
+	border: #ccc 1px solid;
+	width: 350px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.wrapper .header {
+	padding: 15px;
+	background: #f2f3f4;
+	font-family: "Messina-Bold";
+	color: #707c7c;
+}
+
+.wrapper .inside-wrapper {
+	width: 335px;
+	margin: auto;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs {
+	width: 100%;
+	color: #0b7dc2;
+	font-family: "MessinaMono-Bold";
+	padding: 5px;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .gender-radios {
+	display: inline-block;
+	width: 50%;
+	padding: 5px;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .gender-radios p {
+	text-align: left;
+	color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .gender-radios form.gender-radioBtn {
+	margin-top: 5px;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .gender-radios form.gender-radioBtn input[type="radio"] {
+	background-color: #0b7dc2;
+	border: none;
+	color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .weight-input {
+	display: inline-block;
+	padding: 5px;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .weight-input p {
+	display: inline-block;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .weight-input input {
+	background: #fff;
+	border-radius: 4px;
+	width: 50px;
+	display: inline-block;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: 100;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .weight-input span {
+	font-size: 12px;
+	color: #707c7c;
+}
+
+.wrapper .inside-wrapper .gender-weight-inputs .weight-input label {
+	display: block;
+}
+
+.wrapper .inside-wrapper h2 {
+	color: #0b7dc2;
+	font-family: "MessinaMono-Bold";
+	margin: 4px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.wrapper .inside-wrapper .drinks-counter {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.wrapper .inside-wrapper .drinks-counter select {
+	border: #0b7dc2 1px solid;
+	width: 40px;
+	color: #0b7dc2;
+	padding: 1px;
+	margin-bottom: 2px;
+}
+
+.wrapper .inside-wrapper .drinks-counter .beer-list-wrapper, .wrapper .inside-wrapper .drinks-counter .wine-list-wrapper, .wrapper .inside-wrapper .drinks-counter .shots-list-wrapper {
+	padding: 10px;
+	font-family: "Messina-Bold";
+	font-size: 13px;
+}
+
+.wrapper .inside-wrapper .drinks-counter .beer-list-wrapper p, .wrapper .inside-wrapper .drinks-counter .wine-list-wrapper p, .wrapper .inside-wrapper .drinks-counter .shots-list-wrapper p {
+	padding: 1.5px;
+}
+
+.wrapper .inside-wrapper .drinks-counter .beer-list-wrapper .alcohol-type, .wrapper .inside-wrapper .drinks-counter .wine-list-wrapper .alcohol-type, .wrapper .inside-wrapper .drinks-counter .shots-list-wrapper .alcohol-type {
+	color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .drinks-counter .beer-list-wrapper .alcohol-amount, .wrapper .inside-wrapper .drinks-counter .beer-list-wrapper .alcohol-percent, .wrapper .inside-wrapper .drinks-counter .wine-list-wrapper .alcohol-amount, .wrapper .inside-wrapper .drinks-counter .wine-list-wrapper .alcohol-percent, .wrapper .inside-wrapper .drinks-counter .shots-list-wrapper .alcohol-amount, .wrapper .inside-wrapper .drinks-counter .shots-list-wrapper .alcohol-percent {
+	color: #707c7c;
+}
+
+.wrapper .inside-wrapper .hours-counter {
+	margin-bottom: 10px;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-slider {
+	margin: 0px;
+	font-family: "Messina-Bold";
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom {
+	opacity: 0;
+}
+
+.wrapper .inside-wrapper .hours-counter .border-line {
+	position: relative;
+}
+
+.wrapper .inside-wrapper .hours-counter .border-line:before {
+	content: "";
+	height: 1.7px;
+	width: 20px;
+	position: absolute;
+	left: 98%;
+	top: 42%;
+	background-color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .hours-counter .border-line:before:focus {
+	transform: scale(1.1);
+	background-color: red;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom:checked + label,
+.wrapper .inside-wrapper .hours-counter .radio-custom:not(:checked) + label {
+	position: relative;
+	padding-top: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: block;
+	color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom:checked + label:before,
+.wrapper .inside-wrapper .hours-counter .radio-custom:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 17px;
+	height: 17px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	background: #fff;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom:checked + label:after,
+.wrapper .inside-wrapper .hours-counter .radio-custom:not(:checked) + label:after {
+	content: '';
+	width: 11px;
+	height: 12px;
+	background: #0b7dc2;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-radius: 100%;
+	transition: all 0.3s ease;
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.wrapper .inside-wrapper .hours-counter .radio-custom:checked + label:after {
+	opacity: 1;
+	transform: scale(1.5);
+}
+
+.wrapper .inside-wrapper .hours-counter h2 {
+	color: #0b7dc2;
+}
+
+.wrapper .inside-wrapper .hours-counter .checkboxgroup-hours {
+	display: inline-block;
+	text-align: center;
+	padding: 2px;
+	margin-top: -15px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+}
+
+.wrapper .inside-wrapper .hours-counter .checkboxgroup-hours label {
+	display: block;
+}
+
+.wrapper .inside-wrapper .btn-wrap {
+	text-align: center;
+}
+
+.wrapper .inside-wrapper .btn-wrap button {
+	background-color: #0b7dc2;
+	border: none;
+	color: white;
+	padding: 10px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.wrapper .inside-wrapper .btn-wrap button:hover {
+	background-color: #707c7c;
+}
+
+.wrapper .card-1, .wrapper .card-2, .wrapper .card-3, .wrapper .card-4, .wrapper .card-5, .wrapper .card-6 {
+	background-color: #f2f3f4;
+	width: 100%;
+}
+
+.wrapper .card-1 .card-wrap, .wrapper .card-2 .card-wrap, .wrapper .card-3 .card-wrap, .wrapper .card-4 .card-wrap, .wrapper .card-5 .card-wrap, .wrapper .card-6 .card-wrap {
+	width: 325px;
+	margin: auto;
+	padding-left: 10px;
+	margin-top: 30px;
+}
+
+.wrapper .card-1 .card-wrap .light-green, .wrapper .card-2 .card-wrap .light-green, .wrapper .card-3 .card-wrap .light-green, .wrapper .card-4 .card-wrap .light-green, .wrapper .card-5 .card-wrap .light-green, .wrapper .card-6 .card-wrap .light-green {
+	width: 60px;
+	height: 20px;
+	background-color: #54b848;
+	display: inline-block;
+	margin-right: -5px;
+}
+
+.wrapper .card-1 .card-wrap .yellow, .wrapper .card-2 .card-wrap .yellow, .wrapper .card-3 .card-wrap .yellow, .wrapper .card-4 .card-wrap .yellow, .wrapper .card-5 .card-wrap .yellow, .wrapper .card-6 .card-wrap .yellow {
+	width: 60px;
+	height: 20px;
+	background-color: #f6ca17;
+	display: inline-block;
+	margin-right: -5px;
+}
+
+.wrapper .card-1 .card-wrap .orange, .wrapper .card-2 .card-wrap .orange, .wrapper .card-3 .card-wrap .orange, .wrapper .card-4 .card-wrap .orange, .wrapper .card-5 .card-wrap .orange, .wrapper .card-6 .card-wrap .orange {
+	width: 60px;
+	height: 20px;
+	background-color: #ef6623;
+	display: inline-block;
+	margin-right: -5px;
+}
+
+.wrapper .card-1 .card-wrap .red, .wrapper .card-2 .card-wrap .red, .wrapper .card-3 .card-wrap .red, .wrapper .card-4 .card-wrap .red, .wrapper .card-5 .card-wrap .red, .wrapper .card-6 .card-wrap .red {
+	width: 60px;
+	height: 20px;
+	background-color: #cc2127;
+	display: inline-block;
+	margin-right: -5px;
+}
+
+.wrapper .card-1 .card-wrap .black, .wrapper .card-2 .card-wrap .black, .wrapper .card-3 .card-wrap .black, .wrapper .card-4 .card-wrap .black, .wrapper .card-5 .card-wrap .black, .wrapper .card-6 .card-wrap .black {
+	width: 60px;
+	height: 20px;
+	background-color: #000;
+	display: inline-block;
+	margin-right: -5px;
+}
+
+.wrapper .card-1 .card-wrap p, .wrapper .card-2 .card-wrap p, .wrapper .card-3 .card-wrap p, .wrapper .card-4 .card-wrap p, .wrapper .card-5 .card-wrap p, .wrapper .card-6 .card-wrap p {
+	text-align: left;
+	padding-bottom: 5px;
+	font-family: "Messina-Regular";
+	font-size: 15px;
+}
+
+.wrapper .card-1 .card-wrap .bac-color-text-1, .wrapper .card-2 .card-wrap .bac-color-text-1, .wrapper .card-3 .card-wrap .bac-color-text-1, .wrapper .card-4 .card-wrap .bac-color-text-1, .wrapper .card-5 .card-wrap .bac-color-text-1, .wrapper .card-6 .card-wrap .bac-color-text-1 {
+	color: #54b848;
+	margin-top: 10px;
+}
+
+.wrapper .card-1 .card-wrap .bac-info, .wrapper .card-2 .card-wrap .bac-info, .wrapper .card-3 .card-wrap .bac-info, .wrapper .card-4 .card-wrap .bac-info, .wrapper .card-5 .card-wrap .bac-info, .wrapper .card-6 .card-wrap .bac-info {
+	margin-bottom: 10px;
+}
+
+.wrapper .card-2 .bac-color-text-2 {
+	color: #f6ca17;
+	margin-top: 10px;
+}
+
+.wrapper .card-3 .bac-color-text-3 {
+	color: #ef6623;
+	margin-top: 10px;
+}
+
+.wrapper .card-4 .bac-color-text-4 {
+	color: #cc2127;
+	margin-top: 10px;
+}
+
+.wrapper .card-5 .bac-color-text-5 {
+	color: #cc2127;
+	margin-top: 10px;
+}
+
+.wrapper .card-6 .bac-color-text-6 {
+	color: #f6ca17;
+	margin-top: 10px;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+	display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
