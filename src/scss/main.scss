@@ -284,7 +284,7 @@ body {
 
 	
 
-	.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+	.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
 		background-color: $lightGrey;
 		width: 100%;
 
@@ -301,6 +301,7 @@ body {
 				margin-top: 3.4px;
 				font-size: 14px;
 				font-family: "MessinaMono-Bold";
+				color: #fff;
 			}
 			
 
@@ -332,6 +333,8 @@ body {
 				background-color: #ef6623;
 				display: inline-block;
 				margin-right: -5px;
+				vertical-align: top;
+
 			}
 	
 			.red {
@@ -340,6 +343,8 @@ body {
 				background-color: #cc2127;
 				display: inline-block;
 				margin-right: -5px;
+				vertical-align: top;
+
 			}
 	
 			.black {
@@ -348,6 +353,8 @@ body {
 				background-color: #000;
 				display: inline-block;
 				margin-right: -5px;
+				vertical-align: top;
+
 			}
 	
 			p {
@@ -399,12 +406,25 @@ body {
 		.bac-color-text-6 {
 			color: #f6ca17;
 			margin-top: 10px;
+
+		}
+	}
+
+	.card-7 {
+		margin-top: 10px;
+
+		.bac-color-text-7 {
+			padding-top: 10px;
+		}
+
+		p {
+			padding:  5px;
 		}
 	}
 }
 
 
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
 	display: none;
 }
 

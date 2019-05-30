@@ -313,26 +313,27 @@ body {
 	color: #0b7dc2;
 }
 
-.wrapper .card-1, .wrapper .card-2, .wrapper .card-3, .wrapper .card-4, .wrapper .card-5, .wrapper .card-6 {
+.wrapper .card-1, .wrapper .card-2, .wrapper .card-3, .wrapper .card-4, .wrapper .card-5, .wrapper .card-6, .wrapper .card-7 {
 	background-color: #f2f3f4;
 	width: 100%;
 }
 
-.wrapper .card-1 .card-wrap, .wrapper .card-2 .card-wrap, .wrapper .card-3 .card-wrap, .wrapper .card-4 .card-wrap, .wrapper .card-5 .card-wrap, .wrapper .card-6 .card-wrap {
+.wrapper .card-1 .card-wrap, .wrapper .card-2 .card-wrap, .wrapper .card-3 .card-wrap, .wrapper .card-4 .card-wrap, .wrapper .card-5 .card-wrap, .wrapper .card-6 .card-wrap, .wrapper .card-7 .card-wrap {
 	width: 325px;
 	margin: auto;
 	padding-left: 10px;
 	margin-top: 30px;
 }
 
-.wrapper .card-1 .card-wrap .result, .wrapper .card-2 .card-wrap .result, .wrapper .card-3 .card-wrap .result, .wrapper .card-4 .card-wrap .result, .wrapper .card-5 .card-wrap .result, .wrapper .card-6 .card-wrap .result {
+.wrapper .card-1 .card-wrap .result, .wrapper .card-2 .card-wrap .result, .wrapper .card-3 .card-wrap .result, .wrapper .card-4 .card-wrap .result, .wrapper .card-5 .card-wrap .result, .wrapper .card-6 .card-wrap .result, .wrapper .card-7 .card-wrap .result {
 	text-align: center;
 	margin-top: 3.4px;
 	font-size: 14px;
 	font-family: "MessinaMono-Bold";
+	color: #fff;
 }
 
-.wrapper .card-1 .card-wrap .light-green, .wrapper .card-2 .card-wrap .light-green, .wrapper .card-3 .card-wrap .light-green, .wrapper .card-4 .card-wrap .light-green, .wrapper .card-5 .card-wrap .light-green, .wrapper .card-6 .card-wrap .light-green {
+.wrapper .card-1 .card-wrap .light-green, .wrapper .card-2 .card-wrap .light-green, .wrapper .card-3 .card-wrap .light-green, .wrapper .card-4 .card-wrap .light-green, .wrapper .card-5 .card-wrap .light-green, .wrapper .card-6 .card-wrap .light-green, .wrapper .card-7 .card-wrap .light-green {
 	width: 60px;
 	height: 20px;
 	background-color: #54b848;
@@ -342,7 +343,7 @@ body {
 	vertical-align: top;
 }
 
-.wrapper .card-1 .card-wrap .yellow, .wrapper .card-2 .card-wrap .yellow, .wrapper .card-3 .card-wrap .yellow, .wrapper .card-4 .card-wrap .yellow, .wrapper .card-5 .card-wrap .yellow, .wrapper .card-6 .card-wrap .yellow {
+.wrapper .card-1 .card-wrap .yellow, .wrapper .card-2 .card-wrap .yellow, .wrapper .card-3 .card-wrap .yellow, .wrapper .card-4 .card-wrap .yellow, .wrapper .card-5 .card-wrap .yellow, .wrapper .card-6 .card-wrap .yellow, .wrapper .card-7 .card-wrap .yellow {
 	width: 60px;
 	height: 20px;
 	background-color: #f6ca17;
@@ -351,43 +352,46 @@ body {
 	vertical-align: top;
 }
 
-.wrapper .card-1 .card-wrap .orange, .wrapper .card-2 .card-wrap .orange, .wrapper .card-3 .card-wrap .orange, .wrapper .card-4 .card-wrap .orange, .wrapper .card-5 .card-wrap .orange, .wrapper .card-6 .card-wrap .orange {
+.wrapper .card-1 .card-wrap .orange, .wrapper .card-2 .card-wrap .orange, .wrapper .card-3 .card-wrap .orange, .wrapper .card-4 .card-wrap .orange, .wrapper .card-5 .card-wrap .orange, .wrapper .card-6 .card-wrap .orange, .wrapper .card-7 .card-wrap .orange {
 	width: 60px;
 	height: 20px;
 	background-color: #ef6623;
 	display: inline-block;
 	margin-right: -5px;
+	vertical-align: top;
 }
 
-.wrapper .card-1 .card-wrap .red, .wrapper .card-2 .card-wrap .red, .wrapper .card-3 .card-wrap .red, .wrapper .card-4 .card-wrap .red, .wrapper .card-5 .card-wrap .red, .wrapper .card-6 .card-wrap .red {
+.wrapper .card-1 .card-wrap .red, .wrapper .card-2 .card-wrap .red, .wrapper .card-3 .card-wrap .red, .wrapper .card-4 .card-wrap .red, .wrapper .card-5 .card-wrap .red, .wrapper .card-6 .card-wrap .red, .wrapper .card-7 .card-wrap .red {
 	width: 60px;
 	height: 20px;
 	background-color: #cc2127;
 	display: inline-block;
 	margin-right: -5px;
+	vertical-align: top;
 }
 
-.wrapper .card-1 .card-wrap .black, .wrapper .card-2 .card-wrap .black, .wrapper .card-3 .card-wrap .black, .wrapper .card-4 .card-wrap .black, .wrapper .card-5 .card-wrap .black, .wrapper .card-6 .card-wrap .black {
+.wrapper .card-1 .card-wrap .black, .wrapper .card-2 .card-wrap .black, .wrapper .card-3 .card-wrap .black, .wrapper .card-4 .card-wrap .black, .wrapper .card-5 .card-wrap .black, .wrapper .card-6 .card-wrap .black, .wrapper .card-7 .card-wrap .black {
 	width: 60px;
 	height: 20px;
 	background-color: #000;
 	display: inline-block;
 	margin-right: -5px;
+	vertical-align: top;
 }
 
-.wrapper .card-1 .card-wrap p, .wrapper .card-2 .card-wrap p, .wrapper .card-3 .card-wrap p, .wrapper .card-4 .card-wrap p, .wrapper .card-5 .card-wrap p, .wrapper .card-6 .card-wrap p {
+.wrapper .card-1 .card-wrap p, .wrapper .card-2 .card-wrap p, .wrapper .card-3 .card-wrap p, .wrapper .card-4 .card-wrap p, .wrapper .card-5 .card-wrap p, .wrapper .card-6 .card-wrap p, .wrapper .card-7 .card-wrap p {
 	text-align: left;
 	padding-bottom: 5px;
 	font-family: "Messina-Regular";
 	font-size: 15px;
 }
 
-.wrapper .card-1 .card-wrap .bac-color-text-1, .wrapper .card-2 .card-wrap .bac-color-text-1, .wrapper .card-3 .card-wrap .bac-color-text-1, .wrapper .card-4 .card-wrap .bac-color-text-1, .wrapper .card-5 .card-wrap .bac-color-text-1, .wrapper .card-6 .card-wrap .bac-color-text-1 {
+.wrapper .card-1 .card-wrap .bac-color-text-1, .wrapper .card-2 .card-wrap .bac-color-text-1, .wrapper .card-3 .card-wrap .bac-color-text-1, .wrapper .card-4 .card-wrap .bac-color-text-1, .wrapper .card-5 .card-wrap .bac-color-text-1, .wrapper .card-6 .card-wrap .bac-color-text-1, .wrapper .card-7 .card-wrap .bac-color-text-1 {
 	color: #54b848;
 	margin-top: 10px;
 }
 
-.wrapper .card-1 .card-wrap .bac-info, .wrapper .card-2 .card-wrap .bac-info, .wrapper .card-3 .card-wrap .bac-info, .wrapper .card-4 .card-wrap .bac-info, .wrapper .card-5 .card-wrap .bac-info, .wrapper .card-6 .card-wrap .bac-info {
+.wrapper .card-1 .card-wrap .bac-info, .wrapper .card-2 .card-wrap .bac-info, .wrapper .card-3 .card-wrap .bac-info, .wrapper .card-4 .card-wrap .bac-info, .wrapper .card-5 .card-wrap .bac-info, .wrapper .card-6 .card-wrap .bac-info, .wrapper .card-7 .card-wrap .bac-info {
 	margin-bottom: 10px;
 }
 
@@ -416,7 +420,19 @@ body {
 	margin-top: 10px;
 }
 
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+.wrapper .card-7 {
+	margin-top: 10px;
+}
+
+.wrapper .card-7 .bac-color-text-7 {
+	padding-top: 10px;
+}
+
+.wrapper .card-7 p {
+	padding: 5px;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
 	display: none;
 }
 
