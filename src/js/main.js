@@ -35,10 +35,10 @@ let getGender = function() {
         R = gender.value;
 
         if( gender.value === 'male') {
-            R = 0.73;
+            R = 0.68;
         }
         else  {
-            R = 0.66;
+            R = 0.60;
         }
     });
 }
@@ -62,9 +62,9 @@ let totalConsumed = function() {
     var drinksAmountWine =  document.querySelector('select[name=wine]').value;
     var drinksAmountSpirits =  document.querySelector('select[name=spirits]').value
 
-    var beer = (drinksAmountBeer * 12) * 0.05;
-    var wine = (drinksAmountWine *  5) * 0.12;    
-    var spirits = (drinksAmountSpirits * 1.5) * 0.40;  
+    var beer = (drinksAmountBeer * 12) * 0.06;
+    var wine = (drinksAmountWine *  5) * 0.14;    
+    var spirits = (drinksAmountSpirits * 1.5) * 0.50;  
 
     totalAlcohol = beer + wine + spirits;
     amount = totalAlcohol * 5.14;

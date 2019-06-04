@@ -414,12 +414,13 @@ body {
 		margin-top: 10px;
 
 		.bac-color-text-7 {
-			padding-top: 10px;
+			padding-top: 5px;
 		}
 
-		p {
-			padding:  5px;
+		.bac-bottom-text-7 {
+			padding-bottom:  5px;
 		}
+
 	}
 }
 
@@ -428,40 +429,3 @@ body {
 	display: none;
 }
 
-
-
-
-// .radio-custom:checked + label,
-// 			.radio-custom:not(:checked) +label {
-// 				position: relative;
-// 				padding-top: 28px;
-// 				cursor: pointer;
-// 				line-height: 20px;
-// 				display: block;
-// 				color: $accentBlue;
-// 			}
-			
-// 			// 
-
-// 			.radio-custom:checked + label:after, 
-// 			.radio-custom:not(:checked) + label:after {
-// 				content: '';
-// 				width: 11px;
-// 				height: 12px;
-// 				background: $accentBlue;
-// 				position: absolute;
-// 				top: 4px;
-// 				left: 4px;
-// 				border-radius: 100%;
-// 				transition: all 0.3s ease;
-// 			}
-
-// 			.radio-custom:not(:checked) + label:after {
-// 				opacity: 0;
-// 				transform: scale(0);
-// 			}
-
-// 			.radio-custom:checked + label:after {
-// 				opacity: 1;
-// 				transform: scale(1.75);
-// 			}
