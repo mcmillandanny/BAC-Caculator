@@ -23,6 +23,8 @@ let H;  // HOURS
 var R; // ALCOHOL DISTRIBUTION RATIO
 var W; // BODY WEIGHT
 var totalAlcohol; // AMOUNT CONSUMED
+var amount;
+var weightRatio;
 
 // get Gender //
 
@@ -47,6 +49,8 @@ let getGender = function() {
 let weightValue = function() {
     var weight = document.getElementById("weight-input").value;
     W = parseInt(weight);
+    weightRatio = W * R;
+    console.log(weightRatio, 'weight Ratio');
 }
 
 
@@ -63,7 +67,8 @@ let totalConsumed = function() {
     var spirits = (drinksAmountSpirits * 1.5) * 0.40;  
 
     totalAlcohol = beer + wine + spirits;
-    console.log(totalAlcohol);
+    amount = totalAlcohol * 5.14;
+
  
 }
 
@@ -86,11 +91,15 @@ let hoursTotal = function() {
         weightValue();
         totalConsumed();
         clearBox();
+
+        console.log(R, "dist ratio")
+        console.log(amount, "total alcohol")
+
     
        
-    
-        bac = ((totalAlcohol * 5.15 ) / (W * R)) - (.015 * H);
-        bac = Math.round(bac * 100) / 100;
+        bac = (amount / weightRatio) - .015 * H;
+        console.log(bac);
+        bac = Math.ceil(bac * 100) / 100;
         console.log(bac);
         
         let bacResult = document.createElement('div');
@@ -100,6 +109,14 @@ let hoursTotal = function() {
         switch (bac) {
             case 0.00:
             case -0.01:
+            TweenMax.fromTo(".card-7", .3, {
+                y: "70px",
+                display: "inline-block",
+            },
+                {
+                    y: "0px"
+                }
+            )
             card1.style.display = "none";
             card2.style.display = "none";
             card3.style.display = "none";
@@ -107,7 +124,6 @@ let hoursTotal = function() {
             card5.style.display = "none";
             card6.style.display = "none";
             card6.style.display = "none";
-            card7.style.display = "block";
         }
     
         switch (bac) {
@@ -239,4 +255,6 @@ let hoursTotal = function() {
 }
 
 hoursTotal();
+
+
 
