@@ -321,7 +321,6 @@ body {
 
 .wrapper .card-1 p, .wrapper .card-2 p, .wrapper .card-3 p, .wrapper .card-4 p, .wrapper .card-5 p, .wrapper .card-6 p, .wrapper .card-7 p {
 	font-family: "MessinaMono-Bold";
-	line-height: 1;
 }
 
 .wrapper .card-1 .card-wrap, .wrapper .card-2 .card-wrap, .wrapper .card-3 .card-wrap, .wrapper .card-4 .card-wrap, .wrapper .card-5 .card-wrap, .wrapper .card-6 .card-wrap, .wrapper .card-7 .card-wrap {
