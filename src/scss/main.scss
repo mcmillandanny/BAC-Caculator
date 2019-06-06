@@ -287,6 +287,13 @@ body {
 	.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
 		background-color: $lightGrey;
 		width: 100%;
+		height: 155px;
+
+		p {
+			font-family: "MessinaMono-Bold";
+			line-height: 1;
+		}
+
 
 
 
@@ -295,6 +302,9 @@ body {
 			margin: auto;
 			padding-left: 10px;
 			margin-top: 30px;
+
+			
+		
 
 			.result {
 				text-align: center;
@@ -371,6 +381,10 @@ body {
 			.bac-info {
 				margin-bottom: 10px;
 			}
+
+			.light-green,  .yellow, .orange, .red, .black {
+				opacity: 0;
+			}
 		}
 	}
 
@@ -415,10 +429,12 @@ body {
 
 		.bac-color-text-7 {
 			padding-top: 5px;
+			color: #54b848;
 		}
 
 		.bac-bottom-text-7 {
 			padding-bottom:  5px;
+			
 		}
 
 	}

@@ -316,6 +316,12 @@ body {
 .wrapper .card-1, .wrapper .card-2, .wrapper .card-3, .wrapper .card-4, .wrapper .card-5, .wrapper .card-6, .wrapper .card-7 {
 	background-color: #f2f3f4;
 	width: 100%;
+	height: 155px;
+}
+
+.wrapper .card-1 p, .wrapper .card-2 p, .wrapper .card-3 p, .wrapper .card-4 p, .wrapper .card-5 p, .wrapper .card-6 p, .wrapper .card-7 p {
+	font-family: "MessinaMono-Bold";
+	line-height: 1;
 }
 
 .wrapper .card-1 .card-wrap, .wrapper .card-2 .card-wrap, .wrapper .card-3 .card-wrap, .wrapper .card-4 .card-wrap, .wrapper .card-5 .card-wrap, .wrapper .card-6 .card-wrap, .wrapper .card-7 .card-wrap {
@@ -395,6 +401,10 @@ body {
 	margin-bottom: 10px;
 }
 
+.wrapper .card-1 .card-wrap .light-green, .wrapper .card-1 .card-wrap .yellow, .wrapper .card-1 .card-wrap .orange, .wrapper .card-1 .card-wrap .red, .wrapper .card-1 .card-wrap .black, .wrapper .card-2 .card-wrap .light-green, .wrapper .card-2 .card-wrap .yellow, .wrapper .card-2 .card-wrap .orange, .wrapper .card-2 .card-wrap .red, .wrapper .card-2 .card-wrap .black, .wrapper .card-3 .card-wrap .light-green, .wrapper .card-3 .card-wrap .yellow, .wrapper .card-3 .card-wrap .orange, .wrapper .card-3 .card-wrap .red, .wrapper .card-3 .card-wrap .black, .wrapper .card-4 .card-wrap .light-green, .wrapper .card-4 .card-wrap .yellow, .wrapper .card-4 .card-wrap .orange, .wrapper .card-4 .card-wrap .red, .wrapper .card-4 .card-wrap .black, .wrapper .card-5 .card-wrap .light-green, .wrapper .card-5 .card-wrap .yellow, .wrapper .card-5 .card-wrap .orange, .wrapper .card-5 .card-wrap .red, .wrapper .card-5 .card-wrap .black, .wrapper .card-6 .card-wrap .light-green, .wrapper .card-6 .card-wrap .yellow, .wrapper .card-6 .card-wrap .orange, .wrapper .card-6 .card-wrap .red, .wrapper .card-6 .card-wrap .black, .wrapper .card-7 .card-wrap .light-green, .wrapper .card-7 .card-wrap .yellow, .wrapper .card-7 .card-wrap .orange, .wrapper .card-7 .card-wrap .red, .wrapper .card-7 .card-wrap .black {
+	opacity: 0;
+}
+
 .wrapper .card-2 .bac-color-text-2 {
 	color: #f6ca17;
 	margin-top: 10px;
@@ -426,6 +436,7 @@ body {
 
 .wrapper .card-7 .bac-color-text-7 {
 	padding-top: 5px;
+	color: #54b848;
 }
 
 .wrapper .card-7 .bac-bottom-text-7 {

@@ -99,12 +99,6 @@ var hoursTotal = function hoursTotal() {
         switch (bac) {
             case 0.00:
             case -0.01:
-                TweenMax.fromTo(".card-7", .3, {
-                    y: "70px",
-                    display: "inline-block"
-                }, {
-                    y: "0px"
-                });
                 card1.style.display = "none";
                 card2.style.display = "none";
                 card3.style.display = "none";
@@ -112,116 +106,146 @@ var hoursTotal = function hoursTotal() {
                 card5.style.display = "none";
                 card6.style.display = "none";
                 card6.style.display = "none";
+                card7.style.display = "inline-block";
         }
 
         switch (bac) {
             case 0.01:
             case 0.02:
             case 0.03:
-                TweenMax.fromTo(".card-1", .3, {
-                    y: "70px",
-                    display: "inline-block"
-                }, {
-                    y: "0px"
-                });
+            case 0.04:
+                card1.style.display = "inline-block";
                 card2.style.display = "none";
                 card3.style.display = "none";
                 card4.style.display = "none";
                 card5.style.display = "none";
                 card6.style.display = "none";
                 card7.style.display = "none";
+
                 var card1Result = document.querySelector(".card1-result");
                 card1Result.appendChild(bacResult);
+                //Show Color
+
+                TweenMax.to('.light-green', .3, { opacity: 1 });
+                //Hide Color
+                TweenMax.to('.yellow', .3, { opacity: 0 });
+                TweenMax.to('.red', .3, { opacity: 0 });
+                TweenMax.to('.orange', .3, { opacity: 0 });
+                TweenMax.to('.black', .3, { opacity: 0 });
+
         }
 
         switch (bac) {
-            case 0.04:
             case 0.05:
             case 0.06:
-                TweenMax.fromTo(".card-2", .3, {
-                    y: "70px",
-                    display: "inline-block"
-                }, {
-                    y: "0px"
-                });
-                card1.style.display = "none";
-                card3.style.display = "none";
-                card4.style.display = "none";
-                card5.style.display = "none";
-                card6.style.display = "none";
-                card7.style.display = "none";
-                var card2Result = document.querySelector(".card2-result");
-                card2Result.appendChild(bacResult);
-
-        }
-
-        switch (bac) {
             case 0.07:
             case 0.08:
             case 0.09:
-            case 0.10:
-                TweenMax.fromTo(".card-3", .3, {
-                    y: "70px",
-                    display: "inline-block"
-                }, {
-                    y: "0px"
-                });
                 card1.style.display = "none";
-                card2.style.display = "none";
+                card2.style.display = "inline-block";
+                card3.style.display = "none";
                 card4.style.display = "none";
                 card5.style.display = "none";
                 card6.style.display = "none";
                 card7.style.display = "none";
-                var card3Result = document.querySelector(".card3-result");
-                card3Result.appendChild(bacResult);
+
+                var card2Result = document.querySelector(".card2-result");
+                card2Result.appendChild(bacResult);
+                //Show Color
+                TweenMax.to('.light-green', .3, { opacity: 1 });
+                TweenMax.to('.yellow', .3, { opacity: 1 });
+                //Hide Colors
+                TweenMax.to('.red', .3, { opacity: 0 });
+                TweenMax.to('.orange', .3, { opacity: 0 });
+                TweenMax.to('.black', .3, { opacity: 0 });
         }
 
-        if (bac >= 0.11 && bac <= 0.20) {
-            TweenMax.fromTo(".card-4", .3, {
-                y: "70px",
-                display: "inline-block"
-            }, {
-                y: "0px"
-            });
+        switch (bac) {
+            case 0.10:
+            case 0.11:
+            case 0.12:
+            case 0.13:
+            case 0.14:
+            case 0.15:
+            case 0.16:
+            case 0.17:
+            case 0.18:
+            case 0.19:
+                card1.style.display = "none";
+                card2.style.display = "none";
+                card3.style.display = "inline-block";
+                card4.style.display = "none";
+                card5.style.display = "none";
+                card6.style.display = "none";
+                card7.style.display = "none";
+
+                var card3Result = document.querySelector(".card3-result");
+                card3Result.appendChild(bacResult);
+                //Show Color
+                TweenMax.to('.light-green', .3, { opacity: 1 });
+                TweenMax.to('.yellow', .3, { opacity: 1 });
+                TweenMax.to('.orange', .3, { opacity: 1 });
+                //Hide Color
+                TweenMax.to('.red', .3, { opacity: 0 });
+                TweenMax.to('.black', .3, { opacity: 0 });
+        }
+
+        if (bac >= 0.20 && bac <= 0.29) {
             card1.style.display = "none";
             card2.style.display = "none";
             card3.style.display = "none";
+            card4.style.display = "inline-block";
             card5.style.display = "none";
             card6.style.display = "none";
             card7.style.display = "none";
+
             var card4Result = document.querySelector(".card4-result");
             card4Result.appendChild(bacResult);
-        } else if (bac >= 0.21 && bac <= 0.34) {
-            TweenMax.fromTo(".card-5", .3, {
-                y: "70px",
-                display: "inline-block"
-            }, {
-                y: "0px"
-            });
-            card1.style.display = "none";
-            card2.style.display = "none";
-            card3.style.display = "none";
-            card4.style.display = "none";
-            card6.style.display = "none";
-            card7.style.display = "none";
-            var card5Result = document.querySelector(".card5-result");
-            card5Result.appendChild(bacResult);
-        } else if (bac >= 0.35) {
-            TweenMax.fromTo(".card-6", .3, {
-                y: "70px",
-                display: "inline-block"
-            }, {
-                y: "0px"
-            });
-            card1.style.display = "none";
-            card2.style.display = "none";
-            card3.style.display = "none";
-            card4.style.display = "none";
-            card5.style.display = "none";
-            card7.style.display = "none";
-            var card6Result = document.querySelector(".card6-result");
-            card6Result.appendChild(bacResult);
+            //Show Color
+            TweenMax.to('.light-green', .3, { opacity: 1 });
+            TweenMax.to('.yellow', .3, { opacity: 1 });
+            TweenMax.to('.orange', .3, { opacity: 1 });
+            TweenMax.to('.red', .3, { opacity: 1 });
+            //Hide Color
+            TweenMax.to('.black', .3, { opacity: 0 });
         }
+
+        // else if (bac >= 0.29 && bac <= 0.34) {
+        //     TweenMax.fromTo(".card-5", .3, {
+        //         y: "70px",
+        //         display: "inline-block",
+        //     },
+        //         {
+        //             y: "0px"
+        //         }
+        //     )
+        //     card1.style.display = "none";
+        //     card2.style.display = "none";
+        //     card3.style.display = "none";
+        //     card4.style.display = "none";
+        //     card6.style.display = "none";
+        //     card7.style.display = "none";
+        //     let card5Result = document.querySelector(".card5-result"); 
+        //     card5Result.appendChild(bacResult);
+        // }
+        else if (bac >= 0.30) {
+                card1.style.display = "none";
+                card2.style.display = "none";
+                card3.style.display = "none";
+                card4.style.display = "none";
+                card5.style.display = "none";
+                card6.style.display = "inline-block";
+                card7.style.display = "none";
+
+                var card6Result = document.querySelector(".card6-result");
+                card6Result.appendChild(bacResult);
+
+                TweenMax.to('.light-green', 1, { opacity: 1 });
+                TweenMax.to('.yellow', 1, { opacity: 1 });
+                TweenMax.to('.orange', 1, { opacity: 1 });
+                TweenMax.to('.red', 1, { opacity: 1 });
+                TweenMax.to('.black', 1, { opacity: 1 });
+            }
     });
 };
 
