@@ -87,17 +87,17 @@ body {
 						 
 					}
 					input[type='radio']:after {
+						content: '';
 						width: 12px;
 						height: 12px;
 						border-radius: 15px;
-						top: 1px;
-						left: -1px;
+						top: 0px;
+						left: 0px;
 						position: relative;
 						background-color: #fff;
-						content: '';
 						display: inline-block;
 						visibility: visible;
-						border: 1px solid $accentBlue;
+						border: 1px solid #ccc;
 						outline: none;
 					}
 				
@@ -105,8 +105,8 @@ body {
 						width: 12px;
 						height: 12px;
 						border-radius: 15px;
-						top: 1px;
-						left: -1px;
+						top: 0px;
+						left: 0px;
 						position: relative;
 						background-color: $accentBlue;
 						content: '';
@@ -197,7 +197,7 @@ body {
 			margin-bottom: 10px;
 			
 			.radio-slider {
-			margin: 0px;
+			margin-top: 20px;
 			font-family: "Messina-Bold";
 			font-weight: 300;
 			font-size: 12px;
@@ -213,7 +213,7 @@ body {
 				width: 12px;
 				height: 12px;
 				border-radius: 15px;
-				top: 15px;
+				top: 0px;
 				left: 0px;
 				position: relative;
 				background-color: #fff;
@@ -228,7 +228,7 @@ body {
 				width: 12px;
 				height: 12px;
 				border-radius: 15px;
-				top: 15px;
+				top: 0px;
 				left: 0px;
 				position: relative;
 				background-color: $accentBlue;
@@ -255,7 +255,7 @@ body {
 				width: 30px;
 				position: absolute;
 				left: 66%;
-				top: 42%;
+				top: 33%;
 				z-index: -1;
 				background-color: $accentBlue;
 			}
@@ -276,7 +276,6 @@ body {
 			}
 			.checkboxgroup-hours label {
 				display: block;
-				margin-top: 25px; 
 				color: $accentBlue;
 			}
 		}
@@ -417,7 +416,7 @@ body {
 
 	.card-6 {
 		.bac-color-text-6 {
-			color: #f6ca17;
+			color: #000;
 			margin-top: 10px;
 
 		}
